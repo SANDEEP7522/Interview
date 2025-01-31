@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Bar Examples</title>
-    <style>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Progress Bar Examples</title>
+          <style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -21,38 +21,55 @@
             margin-bottom: 5px;
         }
     </style>
-</head>
-<body>
+     </head>
+     <body>
 
-    <h2>Progress Bar Examples</h2>
+          <h2>Progress Bar Examples</h2>
 
-    <!-- Basic Progress -->
-    <div class="container">
-        <label>Basic Progress:</label>
-        <progress class="pro" value="50" max="100"></progress>
-    </div>
+          <!-- Basic Progress -->
+          <div class="container">
+               <label>Basic Progress:</label>
+               <progress class="pro" value="50" max="100"></progress>
+          </div>
 
-    <!-- Determinate Progress (With Value) -->
-    <div class="container">
-        <label>Determinate Progress (70% Completed):</label>
-        <progress class="pro" value="70" max="100"></progress>
-    </div>
+          <div>
+               <textarea spellcheck="true"></textarea>
+               <p>Super<wbr>califragilistic<wbr>expialidocious</p>
+               <p>This is a <mark>highlighted</mark> text.</p>
+               <p><cite>Harry Potter</cite> is a famous book.</p>
 
-    <!-- Indeterminate Progress (No Value) -->
-    <div class="container">
-        <label>Indeterminate Progress (Loading...):</label>
-        <progress class="pro"></progress>
-    </div>
-    <progress>jdfknjk</progress>
+          </div>
 
-    <!-- Updating Progress with JavaScript -->
-    <div class="container">
-        <label>Dynamic Progress (Click to Increase):</label>
-        <progress class="pro" id="dynamicProgress" value="20" max="100"></progress>
-        <button onclick="increaseProgress()">Increase Progress</button>
-    </div>
+          <div>
 
-    <script>
+               <h6>acronym text</h6>
+               <abbr title="Hypertext Markup Language">HTML</abbr>
+               <acronym
+                    title="National Aeronautics and Space Administration">NASA</acronym>
+          </div>
+
+          <!-- Determinate Progress (With Value) -->
+          <div class="container">
+               <label>Determinate Progress (70% Completed):</label>
+               <progress class="pro" value="70" max="100"></progress>
+          </div>
+
+          <!-- Indeterminate Progress (No Value) -->
+          <div class="container">
+               <label>Indeterminate Progress (Loading...):</label>
+               <progress class="pro"></progress>
+          </div>
+          <progress>jdfknjk</progress>
+
+          <!-- Updating Progress with JavaScript -->
+          <div class="container">
+               <label>Dynamic Progress (Click to Increase):</label>
+               <progress class="pro" id="dynamicProgress" value="20"
+                    max="100"></progress>
+               <button onclick="increaseProgress()">Increase Progress</button>
+          </div>
+
+          <script>
         function increaseProgress() {
             let progress = document.getElementById("dynamicProgress");
             if (progress.value < 100) {
@@ -61,5 +78,5 @@
         }
     </script>
 
-</body>
+     </body>
 </html>
