@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+            
+        }
+        .pro{
+          width: 500px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Progress Bar Examples</h2>
+
+    <!-- Basic Progress -->
+    <div class="container">
+        <label>Basic Progress:</label>
+        <progress class="pro" value="50" max="100"></progress>
+    </div>
+
+    <!-- Determinate Progress (With Value) -->
+    <div class="container">
+        <label>Determinate Progress (70% Completed):</label>
+        <progress class="pro" value="70" max="100"></progress>
+    </div>
+
+    <!-- Indeterminate Progress (No Value) -->
+    <div class="container">
+        <label>Indeterminate Progress (Loading...):</label>
+        <progress class="pro"></progress>
+    </div>
+    <progress>jdfknjk</progress>
+
+    <!-- Updating Progress with JavaScript -->
+    <div class="container">
+        <label>Dynamic Progress (Click to Increase):</label>
+        <progress class="pro" id="dynamicProgress" value="20" max="100"></progress>
+        <button onclick="increaseProgress()">Increase Progress</button>
+    </div>
+
+    <script>
+        function increaseProgress() {
+            let progress = document.getElementById("dynamicProgress");
+            if (progress.value < 100) {
+                progress.value += 10;
+            }
+        }
+    </script>
+
+</body>
+</html>
