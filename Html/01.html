@@ -18,6 +18,17 @@
         <h1>Welcome to HTML5 Features Demo</h1>
     </header>
 
+     <div>
+      <h1>Heading tages</h1>
+      <h2>Lorem, ipsum dolor.</h2>
+      <h3>Lorem ipsum dolor sit.</h3>
+      <h4>Lorem ipsum dolor sit.</h4>
+      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, qui quos necessitatibus et, alias, nemo quod ipsam reiciendis deleniti aut dignissimos? Earum ab et, reprehenderit est dolor assumenda blanditiis quae.</h5>
+       <h6>sjdfkljgkdfjgksdfj</h6> 
+     </div>
+
+
+
     <nav>
         <ul>
             <li><a href="#forms">Forms</a></li>
@@ -75,7 +86,12 @@
         // Drawing on Canvas
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
-        ctx.fillStyle = "blue";
+        const gradient = ctx.createLinearGradient(50, 50, 150, 50);
+        gradient.addColorStop(0, "#FF0000");
+        gradient.addColorStop(0.5, "#00FF00");
+        gradient.addColorStop(0.5, "#FFFFF6");
+        gradient.addColorStop(1, "#0000FF");
+        ctx.fillStyle = gradient;
         ctx.fillRect(50, 50, 100, 50);
 
         // Local Storage
