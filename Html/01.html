@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Features Demo</title>
-    <style>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>HTML5 Features Demo</title>
+          <style>
         body { font-family: Arial, sans-serif; margin: 20px; padding: 0; }
         header, footer { background: #333; color: white; text-align: center; padding: 10px; }
         section { margin-bottom: 20px; }
         canvas { border: 1px solid black; }
     </style>
-</head>
-<body>
+     </head>
+     <body>
 
-    
-    <header>
-        <h1>Welcome to HTML5 Features Demo</h1>
-    </header>
+          <header>
+               <h1>Welcome to HTML5 Features Demo</h1>
+          </header>
 
-     <div>
-      <h1>Heading tages</h1>
-      <h2>Lorem, ipsum dolor.</h2>
-      <h3>Lorem ipsum dolor sit.</h3>
-      <h4>Lorem ipsum dolor sit.</h4>
-      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, qui quos necessitatibus et, alias, nemo quod ipsam reiciendis deleniti aut dignissimos? Earum ab et, reprehenderit est dolor assumenda blanditiis quae.</h5>
-       <h6>sjdfkljgkdfjgksdfj</h6> 
-     </div>
+          <div>
+               <h1>Heading tages</h1>
+               <h2>Lorem, ipsum dolor.</h2>
+               <h3>Lorem ipsum dolor sit.</h3>
+               <h4>Lorem ipsum dolor sit.</h4>
+               <h5>Let, alias, nemo quod quae.</h5>
+               <h6>sjdfkljgkdfjgksdfj</h6>
+          </div>
 
+          <b>This is bold text</b>
+          <strong>This is important text(Strong tag)</strong>
 
+          <div id="unique">This is unique id</div>
+          <div class="common">This is common class</div>
 
-    <nav>
-        <ul>
-            <li><a href="#forms">Forms</a></li>
-            <li><a href="#media">Multimedia</a></li>
-            <li><a href="#graphics">Canvas</a></li>
-            <li><a href="#storage">Local Storage</a></li>
-        </ul>
-    </nav>
+          <div>
 
-    <main>
-        <section id="forms">
-            <h2>New Form Controls</h2>
-            <form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email">
-                
-                <label for="date">Date:</label>
-                <input type="date" id="date">
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+               <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOOOfYzoeBOkukDXn2R9sPGHJmEyVCDQI6Yg&s"
+                    alt="Sample Image" width="300">
+          </div>
 
-        <section id="media">
-            <h2>Multimedia Support</h2>
-            <audio controls>
-                <source src="audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+          <nav>
+               <ul>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#media">Multimedia</a></li>
+                    <li><a href="#graphics">Canvas</a></li>
+                    <li><a href="#storage">Local Storage</a></li>
+               </ul>
+          </nav>
 
-            <video controls width="400">
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
+          <main>
+               <section id="forms">
+                    <h2>New Form Controls</h2>
+                    <form>
+                         <label for="email">Email:</label>
+                         <input type="email" id="email"
+                              placeholder="Enter your email">
 
-        <section id="graphics">
-            <h2>Canvas for Graphics</h2>
-            <canvas id="myCanvas" width="300" height="150"></canvas>
-        </section>
+                         <label for="date">Date:</label>
+                         <input type="date" id="date">
 
-        <section id="storage">
-            <h2>Local Storage Example</h2>
-            <button onclick="saveToStorage()">Save to Local Storage</button>
-            <button onclick="showStorage()">Show Saved Data</button>
-            <p id="storageOutput"></p>
-        </section>
-    </main>
+                         <button type="submit">Submit</button>
+                    </form>
+               </section>
 
-    <footer>
-        <p>&copy; 2025 HTML5 Demo Page</p>
-    </footer>
+               <section id="media">
+                    <h2>Multimedia Support</h2>
+                    <audio controls>
+                         <source src="audio.mp3" type="audio/mpeg">
+                         Your browser does not support the audio element.
+                    </audio>
 
-    <script>
+                    <video controls width="400">
+                         <source src="video.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+               </section>
+
+               <section id="graphics">
+                    <h2>Canvas for Graphics</h2>
+                    <canvas id="myCanvas" width="300" height="150"></canvas>
+               </section>
+
+               <section id="storage">
+                    <h2>Local Storage Example</h2>
+                    <button onclick="saveToStorage()">Save to Local
+                         Storage</button>
+                    <button onclick="showStorage()">Show Saved Data</button>
+                    <p id="storageOutput"></p>
+               </section>
+          </main>
+
+          <footer>
+               <p>&copy; 2025 HTML5 Demo Page</p>
+          </footer>
+
+          <script>
         // Drawing on Canvas
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
@@ -106,5 +118,5 @@
         }
     </script>
 
-</body>
+     </body>
 </html>
