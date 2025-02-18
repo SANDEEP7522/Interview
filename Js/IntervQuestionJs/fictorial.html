@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+        function factorial(n) {
+            if (n < 0) return "Factorial not defined for negative numbers";
+            let fact = 1;
+            for (let i = 2; i <= n; i++) {
+                fact *= i;
+            }
+            return fact;
+                }
+        
+        const userInput = prompt("Enter a number:");
+        const num = parseInt(userInput);
+        
+            if (!isNaN(num)) {
+                console.log(`Factorial of ${num} is: ${factorial(num)}`);
+            } else {
+                console.log("Please enter a valid number");
+            }
+    </script>
+
+    </body>
+</html>
