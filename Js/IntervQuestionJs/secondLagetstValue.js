@@ -4,7 +4,9 @@ const largestNumber = (arr) => {
      firstLargetstValue = Math.max(...arr);
      index = arr.indexOf(firstLargetstValue);
      arr.splice(index, 1);
-     return (firstLargetstValue); 
+     secondLargetstValue = Math.max(...arr);
+
+     return (firstLargetstValue, secondLargetstValue); 
 }
 
 console.log(largestNumber(arr));
