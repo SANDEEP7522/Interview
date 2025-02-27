@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+function calculator() {
+     var num1 = parseFloat(prompt("Enter first number:")) 
+     var operator = prompt("Enter operator (+, -, *, /, %):");
+     var num2 = parseFloat(prompt("Enter second number:")); 
+
+     switch (operator) {
+       case "+":
+         result = num1 + num2;
+         break;
+       case "-":
+         result = num1 - num2;
+         break;
+       case "*":
+         result = num1 * num2;
+         break;
+       case "/":
+         result = num1 / num2;
+         break;
+       case "%":
+         result = num1 % num2;
+         break;
+       default:
+         alert("Invalid operator");
+         return;
+     }
+     alert("Result: " + result);
+   }
+   
+   calculator();
+
+</script>
+
+
+</body>
+</html>
